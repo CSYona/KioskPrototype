@@ -157,22 +157,20 @@ Kiosk server running at [http://localhost:3000](http://localhost:3000)
 使用方法
 ----
 
-<<<<<<< HEAD
+
 ### Step 1: セッション開始
 =======
-### 세션 시작
->>>>>>> 4c3c7c0c0e6fb372c6d1d5712fa480172c7920e5
+
 
 1. `http://localhost:3000/test/session-start.html` にアクセス
 2. **「入店」** ボタンをクリック
 3. 自動的にキオスク画面(`index.html`)へ移動
    * URLに `sessionId` と `expireTime` が自動付与
 
-<<<<<<< HEAD
+
 ### Step 2: キオスクフロー進行
 =======
-### 키오스크 플로우 진행
->>>>>>> 4c3c7c0c0e6fb372c6d1d5712fa480172c7920e5
+
 
 1. **初期画面**: 「スタート」ボタンをクリック
 2. **カート画面**: 3秒後に自動遷移
@@ -182,7 +180,8 @@ Kiosk server running at [http://localhost:3000](http://localhost:3000)
 4. **レシート画面**: 自動遷移 (1秒待機)
 5. **終了画面**: 5秒後に初期画面へ復帰
 
-<<<<<<< HEAD
+
+
 ### Step 3: 結果確認
 =======
 
