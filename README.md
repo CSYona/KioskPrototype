@@ -97,7 +97,7 @@
 プロジェクト構造
 ----------
 
- kiosk/
+kiosk/
 ├── app.js                    # メインサーバーエントリーポイント
 ├── controllers/
 │   └── kioskController.js    # ビジネスロジック (セッション、返金、シミュレーション)
