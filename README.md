@@ -97,31 +97,31 @@
 プロジェクト構造
 ----------
 
-    kiosk/
-    ├── app.js                    # 메인 서버 엔트리 포인트
-    ├── controllers/
-    │   └── kioskController.js    # 비즈니스 로직 (세션, 환불, 시뮬레이션)
-    ├── routes/
-    │   └── kioskRoutes.js        # API 라우팅
-    ├── websocket/
-    │   └── kioskSocket.js        # WebSocket 서버 설정
-    ├── models/
-    │   └── productModel.js       # (예비) 상품 데이터 모델
-    ├── public/                   # 프론트엔드 정적 파일
-    │   ├── index.html            # 키오스크 메인 UI
-    │   ├── app.js                # 클라이언트 로직
-    │   ├── style.css             # 스타일시트
-    │   └── assets/               # 이미지 리소스
-    │       ├── basket.png
-    │       ├── receipt.png
-    │       └── greeting.png
-    ├── test/                     # 테스트 및 Mock 데이터
-    │   ├── session-start.html    # 입장 시뮬레이션 페이지
-    │   ├── mock-products.json    # 샘플 상품 데이터
-    │   ├── paidSessions.json     # 결제 세션 로그
-    │   └── refunds.json          # 환불 내역 로그
-    ├── package.json
-    └── README.md
+ kiosk/
+├── app.js                    # メインサーバーエントリーポイント
+├── controllers/
+│   └── kioskController.js    # ビジネスロジック (セッション、返金、シミュレーション)
+├── routes/
+│   └── kioskRoutes.js        # APIルーティング
+├── websocket/
+│   └── kioskSocket.js        # WebSocketサーバー設定
+├── models/
+│   └── productModel.js       # (予備) 商品データモデル
+├── public/                   # フロントエンド静的ファイル
+│   ├── index.html            # キオスクメインUI
+│   ├── app.js                # クライアントロジック
+│   ├── style.css             # スタイルシート
+│   └── assets/               # 画像リソース
+│       ├── basket.png
+│       ├── receipt.png
+│       └── greeting.png
+├── test/                     # テストおよびMockデータ
+│   ├── session-start.html    # 入店シミュレーションページ
+│   ├── mock-products.json    # サンプル商品データ
+│   ├── paidSessions.json     # 決済セッションログ
+│   └── refunds.json          # 返金履歴ログ
+├── package.json
+└── README.md
 
 * * *
 
@@ -157,14 +157,22 @@ Kiosk server running at [http://localhost:3000](http://localhost:3000)
 使用方法
 ----
 
+<<<<<<< HEAD
 ### Step 1: セッション開始
+=======
+### 세션 시작
+>>>>>>> 4c3c7c0c0e6fb372c6d1d5712fa480172c7920e5
 
 1. `http://localhost:3000/test/session-start.html` にアクセス
 2. **「入店」** ボタンをクリック
 3. 自動的にキオスク画面(`index.html`)へ移動
    * URLに `sessionId` と `expireTime` が自動付与
 
+<<<<<<< HEAD
 ### Step 2: キオスクフロー進行
+=======
+### 키오스크 플로우 진행
+>>>>>>> 4c3c7c0c0e6fb372c6d1d5712fa480172c7920e5
 
 1. **初期画面**: 「スタート」ボタンをクリック
 2. **カート画面**: 3秒後に自動遷移
@@ -174,7 +182,10 @@ Kiosk server running at [http://localhost:3000](http://localhost:3000)
 4. **レシート画面**: 自動遷移 (1秒待機)
 5. **終了画面**: 5秒後に初期画面へ復帰
 
+<<<<<<< HEAD
 ### Step 3: 結果確認
+=======
+
 
 * **コンソールログ**: ブラウザ開発者ツールでセッション情報、スキャン結果を確認
 * **ファイル確認**:
@@ -183,8 +194,12 @@ Kiosk server running at [http://localhost:3000](http://localhost:3000)
 
 * * *
 
+<<<<<<< HEAD
 APIドキュメント
 ------------
+=======
+
+
 
 ### 1. セッション開始
 
@@ -301,8 +316,10 @@ APIドキュメント
 
 * * *
 
+
 テスト環境
----------
+=======
+
 
 ### 必須要件
 
